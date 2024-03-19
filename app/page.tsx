@@ -1,19 +1,9 @@
 import Image from "next/image";
-import "./webflow.css";
-import { Mulish } from "next/font/google";
-import local from 'next/font/local';
 
-const mulish = Mulish({
-  subsets: ['latin']
-});
+import { mulish } from "@/src/utils/fonts";
+import { Header } from "@/src/components/core/header";
+import { DesignerDeveloperSwitcher } from "@/src/components/designer-developer-switcher";
 
-const cooper = local({
-  src: '../src/fonts/CooperLightBT.ttf'
-});
-
-const getClass = (...strings: (string | undefined)[]) => {
-  return strings.filter((x) => !!x).join(" ");
-};
 
 export default function Home() {
   return (<div className={mulish.className}>
@@ -25,24 +15,25 @@ export default function Home() {
     <section className="hero-without-image">
       <div className="container-2">
         <div className="hero-wrapper-two">
-          <h1 className={getClass("heading", cooper.className)}>The first-ever <br/>fully integrated design suite.</h1>
+          <Header level={1}>The first-ever <br/>fully integrated design suite.</Header>
           <p className="margin-bottom-24px-2">Harmony transforms any application into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
           <div className="w-layout-hflex flex-block">
             <div>
-              <a href="#" className="button w-button">Join the Beta</a>
+              <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
             </div>
             <div>
-              <a href="#" className="button-2 w-button">Log In</a>
+              <a href="https://dashboard.harmonyui.app" className="button-2 w-button">Log In</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section className="hero-heading-left">
+      <DesignerDeveloperSwitcher/>
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <h1 className={getClass("heading-2", cooper.className)}>Revolutionary <br/>dev/design multiplayer.</h1>
+            <Header>Revolutionary <br/>dev/design multiplayer.</Header>
             <p className="margin-bottom-24px-3">Collaborate in the same environment, updating code and design simultaneously. Remove costly back-and-forth between teams with true agile development.</p>
           </div>
           <div className="hero-split-2">
@@ -53,7 +44,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <h1 className={getClass("heading-2", cooper.className)}>Eliminate your <br/>developer’s design burden.</h1>
+            <Header>Eliminate your <br/>developer’s design burden.</Header>
             <p className="margin-bottom-24px-3">Ship design changes instantly with production-ready code, saving weeks of developer time. Changes made directly in your codebase with seamless Github integration.</p>
           </div>
             <img src="/images/Harmony.ai - 2024-02-01T125854.129 1 (1).svg" loading="lazy" width="293" height="Auto" alt="" className="shadow-two-2"/>
@@ -62,7 +53,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <h1 className={getClass("heading-2", cooper.className)}>Accelerate with instant design iteration.</h1>
+            <Header>Accelerate with instant design iteration.</Header>
             <p className="margin-bottom-24px-3">See your design changes instantly in the application without having to wait for your developer. Prototype new features and designs in minutes.</p>
           </div>
           <div className="hero-split-2">
@@ -73,7 +64,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <h1 className={getClass("heading-2", cooper.className)}>Developer tools built for designers.</h1>
+            <Header>Developer tools built for designers.</Header>
             <p className="margin-bottom-24px-3">Build inside your application with a familiar design canvas. Create with your team’s design elements, components, and br/and. Absolutely no technical context required.</p>
           </div>
           <img src="/images/Harmony.ai - 2024-02-01T125708.592 1 (1).svg" loading="lazy" width="288" alt="" className="shadow-two-2"/>
@@ -82,7 +73,7 @@ export default function Home() {
     </section>
     <section className="hero-without-image-2">
       <div className="hero-wrapper-two-2">
-        <h1 className={getClass("heading-3", cooper.className)}>Join the beta today.</h1>
+        <Header level={3}>Join the beta today.</Header>
         <a href="#" className="button w-button">Join the Beta</a>
       </div>
     </section>
@@ -97,7 +88,7 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <div className="text-block">© 2024 Harmony Suite LLC</div>
+          <div className="text-block">© 2024 Harmony UI LLC</div>
         </div>
       </div>
     </section>

@@ -536,6 +536,10 @@ h1, h2, h3, h4, h5, h6 {
   .heading-3 {
     font-weight: 300;
   }
+
+  .header-wrapper {
+    text-align: center;
+  }
   
   .footer-dark {
     height: 100px;
@@ -733,7 +737,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .hero-without-image {
-      background-image: url('/images/Group-83.svg');
+      background-image: url('/images/Group 83.svg');
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
