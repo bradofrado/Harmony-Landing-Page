@@ -1,113 +1,106 @@
 import Image from "next/image";
+import "./webflow.css";
+import { Mulish } from "next/font/google";
+import local from 'next/font/local';
+
+const mulish = Mulish({
+  subsets: ['latin']
+});
+
+const cooper = local({
+  src: '../src/fonts/CooperLightBT.ttf'
+});
+
+const getClass = (...strings: (string | undefined)[]) => {
+  return strings.filter((x) => !!x).join(" ");
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  return (<div className={mulish.className}>
+    <div className="navbar-logo-left">
+      <div className="w-layout-hflex flex-block-2">
+        <img src="/images/Group 80.svg" loading="lazy" width="188" alt="" className="image"/>
+      </div>
+    </div>
+    <section className="hero-without-image">
+      <div className="container-2">
+        <div className="hero-wrapper-two">
+          <h1 className={getClass("heading", cooper.className)}>The first-ever <br/>fully integrated design suite.</h1>
+          <p className="margin-bottom-24px-2">Harmony transforms any application into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
+          <div className="w-layout-hflex flex-block">
+            <div>
+              <a href="#" className="button w-button">Join the Beta</a>
+            </div>
+            <div>
+              <a href="#" className="button-2 w-button">Log In</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    </section>
+    <section className="hero-heading-left">
+      <div className="container-3">
+        <div className="hero-wrapper-2">
+          <div className="hero-split-2">
+            <h1 className={getClass("heading-2", cooper.className)}>Revolutionary <br/>dev/design multiplayer.</h1>
+            <p className="margin-bottom-24px-3">Collaborate in the same environment, updating code and design simultaneously. Remove costly back-and-forth between teams with true agile development.</p>
+          </div>
+          <div className="hero-split-2">
+            <img src="/images/Harmony.ai - 2024-02-22T180427.396 1 (1).svg" loading="lazy" width="326" alt="" className="shadow-two-2"/>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="container-3">
+        <div className="hero-wrapper-2">
+          <div className="hero-split-2">
+            <h1 className={getClass("heading-2", cooper.className)}>Eliminate your <br/>developer’s design burden.</h1>
+            <p className="margin-bottom-24px-3">Ship design changes instantly with production-ready code, saving weeks of developer time. Changes made directly in your codebase with seamless Github integration.</p>
+          </div>
+            <img src="/images/Harmony.ai - 2024-02-01T125854.129 1 (1).svg" loading="lazy" width="293" height="Auto" alt="" className="shadow-two-2"/>
+        </div>
       </div>
-    </main>
+      <div className="container-3">
+        <div className="hero-wrapper-2">
+          <div className="hero-split-2">
+            <h1 className={getClass("heading-2", cooper.className)}>Accelerate with instant design iteration.</h1>
+            <p className="margin-bottom-24px-3">See your design changes instantly in the application without having to wait for your developer. Prototype new features and designs in minutes.</p>
+          </div>
+          <div className="hero-split-2">
+            <img src="/images/Harmony.ai - 2024-01-31T155905.284 1 (1).svg" loading="lazy" width="283" alt="" className="shadow-two-2"/>
+          </div>
+        </div>
+      </div>
+      <div className="container-3">
+        <div className="hero-wrapper-2">
+          <div className="hero-split-2">
+            <h1 className={getClass("heading-2", cooper.className)}>Developer tools built for designers.</h1>
+            <p className="margin-bottom-24px-3">Build inside your application with a familiar design canvas. Create with your team’s design elements, components, and br/and. Absolutely no technical context required.</p>
+          </div>
+          <img src="/images/Harmony.ai - 2024-02-01T125708.592 1 (1).svg" loading="lazy" width="288" alt="" className="shadow-two-2"/>
+        </div>
+      </div>
+    </section>
+    <section className="hero-without-image-2">
+      <div className="hero-wrapper-two-2">
+        <h1 className={getClass("heading-3", cooper.className)}>Join the beta today.</h1>
+        <a href="#" className="button w-button">Join the Beta</a>
+      </div>
+    </section>
+    <section className="section">
+      <div className="w-layout-hflex flex-block-3">
+        <div className="footer-social-block">
+          <a href="#" className="footer-social-link w-inline-block">
+            <img src="/images/Group 80 (3).svg" loading="lazy" width="20" alt=""/>
+          </a>
+          <a href="#" className="footer-social-link w-inline-block">
+            <img src="/images/Harmony.ai - 2024-02-23T171929.975 1 (2).svg" loading="lazy" width="20" alt=""/>
+          </a>
+        </div>
+        <div>
+          <div className="text-block">© 2024 Harmony Suite LLC</div>
+        </div>
+      </div>
+    </section>
+    </div>
   );
 }
