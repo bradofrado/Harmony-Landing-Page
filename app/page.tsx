@@ -74,7 +74,7 @@ export default function Home() {
     <section className="hero-without-image-2">
       <div className="hero-wrapper-two-2">
         <Header level={3}>Join the beta today.</Header>
-        <a href="#" className="button w-button">Join the Beta</a>
+        <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
       </div>
     </section>
     <section className="section">
@@ -83,7 +83,7 @@ export default function Home() {
           <a href="#" className="footer-social-link w-inline-block">
             <img src="/images/Group 80 (3).svg" loading="lazy" width="20" alt=""/>
           </a>
-          <a href="#" className="footer-social-link w-inline-block">
+          <a href="" className="footer-social-link w-inline-block">
             <img src="/images/Harmony.ai - 2024-02-23T171929.975 1 (2).svg" loading="lazy" width="20" alt=""/>
           </a>
         </div>

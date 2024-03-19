@@ -12,7 +12,7 @@ export const DesignerDeveloperSwitcher: React.FunctionComponent = () => {
             <div className="header-wrapper mb-8">
                 <Header>Pure Harmony for Designers and Developers.</Header>
             </div>
-            <div className="">
+            <div className="mb-5">
                 <Video/>
             </div>
       </div>
