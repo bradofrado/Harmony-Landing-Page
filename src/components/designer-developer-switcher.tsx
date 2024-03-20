@@ -15,7 +15,7 @@ interface RoleContent {
 const content: Record<'developer' | 'designer', RoleContent> = {
     designer: {
         name: 'Pure Harmony for Designers.',
-        src: 'https://www.loom.com/embed/c569217786984bebb99c72aa69dfb2fd?sid=62de6885-0bd8-4532-9cd1-17bf634e0649',
+        src: 'https://www.loom.com/embed/eaac01c69446429b968f0af6335d5011?sid=4e1a0146-0765-4169-9648-104fc7ee5926',
         linkText: 'I am a developer.',
         link: 'developer'
     },
