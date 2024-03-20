@@ -80,10 +80,10 @@ export default function Home() {
     <section className="section">
       <div className="w-layout-hflex flex-block-3">
         <div className="footer-social-block">
-          <a href="#" className="footer-social-link w-inline-block">
+          <a href="mailto:jacob@harmonyui.app" className="footer-social-link w-inline-block">
             <img src="/images/Group 80 (3).svg" loading="lazy" width="20" alt=""/>
           </a>
-          <a href="" className="footer-social-link w-inline-block">
+          <a href="https://www.linkedin.com/company/harmonyui" target="_blank" className="footer-social-link w-inline-block">
             <img src="/images/Harmony.ai - 2024-02-23T171929.975 1 (2).svg" loading="lazy" width="20" alt=""/>
           </a>
         </div>
