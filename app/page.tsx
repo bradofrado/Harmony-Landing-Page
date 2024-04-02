@@ -22,7 +22,7 @@ export default function Home() {
               <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
             </div>
             <div>
-              <a href="https://dashboard.harmonyui.app" className="button-2 w-button">Log In</a>
+              <a href="https://dashboard.harmonyui.app/setup/quick?teamId=clua06nan0001dvpho5cb10sr" className="button-2 w-button">Interactive Demo</a>
             </div>
           </div>
         </div>
