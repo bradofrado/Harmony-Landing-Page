@@ -3,6 +3,10 @@ import Image from "next/image";
 import { mulish } from "@/src/utils/fonts";
 import { Header } from "@/src/components/core/header";
 import { DesignerDeveloperSwitcher } from "@/src/components/designer-developer-switcher";
+import { RotatingText } from "@/src/components/rotating-text";
+import { Banner } from "@/src/components/core/banner";
+import { Button } from "@/src/components/core/button";
+import { Video } from "@/src/components/core/video";
 
 
 export default function Home() {
@@ -12,29 +16,43 @@ export default function Home() {
         <img src="/images/Group 80.svg" loading="lazy" width="188" alt="" className="image"/>
       </div>
     </div>
-    <section className="hero-without-image">
-      <div className="container-2">
+    <Banner>
+      <div className="flex justify-center items-center gap-10 text-lg">
+        <div>We're raising a seed round in July!</div>
+        <Button as="a" href="https://calendly.com/harmonyai/harmony-pitch" target="_blank">
+          <span className="hidden sm:block">Schedule a Pitch</span>
+          <span className="block sm:hidden">Schedule</span>
+        </Button>
+      </div>
+    </Banner>
+    <section className="flex py-20 px-8 bg-[#f7f7f7] relative">
+      <div className="hero-without-image"/>
+      <div className="container-2 z-10">
         <div className="hero-wrapper-two">
-          <Header level={1}>The first-ever <br/>fully integrated design suite.</Header>
-          <p className="margin-bottom-24px-2">Harmony transforms any application into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
-          <div className="w-layout-hflex flex-block">
+          <Header level={1}><div className="text-center md:text-left">Enable your <RotatingText className="text-[#0c4f6d] font-bold inline-block md:w-[403px]" texts={['designers', 'product managers', 'UX experts', 'decision makers']}/></div> <div>to ship UI <span className="text-[#0c4f6d] font-bold">without developers</span>.</div></Header>
+          <p className="margin-bottom-24px-2 !text-[17px] md:!text-xl !max-w-[650px]">Harmony transforms your SaaS app into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
+          <div className="w-layout-hflex flex-block mb-6">
             <div>
               <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
             </div>
             <div>
-              <a href="https://dashboard.harmonyui.app/setup/quick?teamId=clua06nan0001dvpho5cb10sr" className="button-2 w-button">Interactive Demo</a>
+              <a href="https://dashboard.harmonyui.app/setup/quick?teamId=clua06nan0001dvpho5cb10sr" className="button-2 w-button">Try Interactive Demo</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section className="hero-heading-left">
-      <DesignerDeveloperSwitcher/>
+    <div className="container-3">
+      <div>
+        <img src="/harmony-preview.gif" />
+      </div>
+      </div>
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <Header>Revolutionary <br/>dev/design multiplayer.</Header>
-            <p className="margin-bottom-24px-3">Collaborate in the same environment, updating code and design simultaneously. Remove costly back-and-forth between teams with true agile development.</p>
+            <Header level={2}>Fully integrate with an existing codebase.</Header>
+            <p className="margin-bottom-24px-3">Harmony constructs a “map” of your UI code, allowing your team to edit your app with modern design tools.</p>
           </div>
           <div className="hero-split-2">
             <img src="/images/Harmony.ai - 2024-02-22T180427.396 1 (1).svg" loading="lazy" width="326" alt="" className="shadow-two-2"/>
@@ -71,6 +89,16 @@ export default function Home() {
         </div>
       </div>
     </section>
+    <section className="py-10">
+      <div className="container-3">
+        <div className="header-wrapper">
+          <Header level={1}>How does <Emphasize>Harmony</Emphasize> work?</Header>
+        </div>
+        <div className="mb-5">
+            <Video src="https://www.loom.com/embed/3e6c689d979b4251903e7a5c67312bfc?sid=5489f8cb-87e9-46a3-9af6-9039df000d47"/>
+        </div>
+      </div>
+    </section>
     <section className="hero-without-image-2">
       <div className="hero-wrapper-two-2">
         <Header level={3}>Join the beta today.</Header>
@@ -94,4 +122,8 @@ export default function Home() {
     </section>
     </div>
   );
+}
+
+const Emphasize: React.FunctionComponent<{children: React.ReactNode}> = ({children}) => {
+  return <span className="text-[#0c4f6d] font-bold">{children}</span>
 }
