@@ -53,7 +53,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <Header level={3}>Fully integrate with an existing codebase.</Header>
+            <Header className="text-3xl" level={3}>Fully integrate with an existing codebase.</Header>
             <p className="margin-bottom-24px-3">Harmony constructs a “map” of your UI code, allowing your team to edit your app with modern design tools.</p>
           </div>
           <div className="hero-split-2">
@@ -64,7 +64,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <Header level={3}>Eliminate your developer’s design burden.</Header>
+            <Header className="text-3xl" level={3}>Eliminate your developer’s design burden.</Header>
             <p className="margin-bottom-24px-3">Ship design changes instantly with production-ready code, saving weeks of developer time. Changes made directly in your codebase with seamless Github integration.</p>
           </div>
             <img src="/images/Harmony.ai - 2024-02-01T125854.129 1 (1).svg" loading="lazy" width="293" height="Auto" alt="" className="shadow-two-2"/>
@@ -73,7 +73,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <Header level={3}>Accelerate with instant design iteration.</Header>
+            <Header className="text-3xl" level={3}>Accelerate with instant design iteration.</Header>
             <p className="margin-bottom-24px-3">See your design changes instantly in the application without having to wait for your developer. Prototype new features and designs in minutes.</p>
           </div>
           <div className="hero-split-2">
@@ -84,7 +84,7 @@ export default function Home() {
       <div className="container-3">
         <div className="hero-wrapper-2">
           <div className="hero-split-2">
-            <Header level={3}>Developer tools built for designers.</Header>
+            <Header className="text-3xl" level={3}>Developer tools built for designers.</Header>
             <p className="margin-bottom-24px-3">Build inside your application with a familiar design canvas. Create with your team’s design elements, components, and br/and. Absolutely no technical context required.</p>
           </div>
           <img src="/images/Harmony.ai - 2024-02-01T125708.592 1 (1).svg" loading="lazy" width="288" alt="" className="shadow-two-2"/>
@@ -103,7 +103,7 @@ export default function Home() {
     </section>
     <section className="hero-without-image-2">
       <div className="hero-wrapper-two-2">
-        <Header level={3}>Join the beta today.</Header>
+        <Header className="text-3xl" level={3}>Join the beta today.</Header>
         <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
       </div>
     </section>
