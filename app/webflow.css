@@ -242,18 +242,14 @@
     opacity: 1;
     mix-blend-mode: normal;
     background-color: #f7f7f7;
-    background-image: url('/images/Group-83-1.svg');
+    background-image: url('/images/Marketing Content.svg');
     background-position: 42% 53%;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 70%;
     background-attachment: scroll;
     border-bottom: 1px solid #e4ebf3;
     border-radius: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 80px 30px;
-    display: flex;
     position: relative;
   }
   
@@ -467,24 +463,18 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     mix-blend-mode: normal;
     background-color: #f7f7f7;
-    background-image: url("https://assets-global.website-files.com/65d7f77bcc63c43fd7755813/65f08aec1c285ad0a0aa31af_Group%2083%20(1).svg");
+    background-image: url("/images/Marketing Content.svg");
     background-position: 42% 53%;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 70%;
     background-attachment: scroll;
     border-bottom: 1px solid #e4ebf3;
     border-radius: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    filter: blur(2px);
 }
   
   .hero-without-image-2 {
@@ -689,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
   }
   
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1024px) {
     .container {
       max-width: 728px;
     }
@@ -741,10 +731,11 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .hero-without-image {
-      background-image: url('/images/Group 83.svg');
+      background-image: url('/images/Group 83 (1).svg');
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      left: 0px;
       background-attachment: scroll;
     }
   
@@ -873,7 +864,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .hero-without-image {
-      background-image: url('/images/Group-83.svg');
+      background-image: url('/images/Marketing Content.svg');
       background-position: 35%;
       background-size: 4007px;
     }
@@ -978,7 +969,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .hero-without-image {
-      background-image: url('/images/Group-83.svg');
+      background-image: url('/images/Marketing Content.svg');
       background-position: 50%;
       background-size: 4007px;
     }

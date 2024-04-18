@@ -18,10 +18,11 @@ export const XMarkIcon: IconComponent = (props) => {
 interface BannerProps {
     children: React.ReactNode;
     onClose?: () => void;
+    className?: string;
 }
-export const Banner: React.FunctionComponent<BannerProps> = ({children, onClose}) => {
+export const Banner: React.FunctionComponent<BannerProps> = ({children, onClose, className}) => {
     return (
-        <div className="flex justify-center items-center gap-x-6 bg-[#b4c6cf] px-6 py-2.5 sm:px-3.5">
+        <div className={`flex justify-center items-center gap-x-6 bg-[#b4c6cf] px-6 py-2.5 sm:px-3.5 ${className ?? ''}`}>
             <div className="flex-1 text-sm leading-6">
                 {children}
             </div>

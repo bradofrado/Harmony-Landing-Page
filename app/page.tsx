@@ -10,13 +10,13 @@ import { Video } from "@/src/components/core/video";
 
 
 export default function Home() {
-  return (<div className={mulish.className}>
+  return (<div className={`${mulish.className} overflow-auto`}>
     <div className="navbar-logo-left">
       <div className="w-layout-hflex flex-block-2">
         <img src="/images/Group 80.svg" loading="lazy" width="188" alt="" className="image"/>
       </div>
     </div>
-    <Banner>
+    <Banner className="sticky top-0 z-50">
       <div className="flex justify-center items-center gap-10 text-lg">
         <div>We're raising <span className="hidden md:inline">a seed round</span> in July!</div>
         <Button as="a" href="https://calendly.com/harmonyai/harmony-pitch" target="_blank">
@@ -25,12 +25,13 @@ export default function Home() {
         </Button>
       </div>
     </Banner>
-    <section className="flex py-20 px-8 bg-[#f7f7f7] relative">
-      <div className="hero-without-image"/>
+    <section className="flex py-12 lg:py-32 xl:py-40 2xl:py-48 px-0 lg:px-8 bg-[#f7f7f7] relative">
+      <div className="hidden md:block hero-without-image -left-[50%]"/>
+      <div className="hidden lg:block hero-without-image left-[50%]"/>
       <div className="container-2 z-10">
         <div className="hero-wrapper-two">
-          <Header level={1}><div className="text-center md:text-left">Enable your <RotatingText className="text-[#0c4f6d] font-bold inline-block md:w-[403px]" texts={['designers', 'product managers', 'UX experts', 'decision makers']}/></div> <div>to ship UI <span className="text-[#0c4f6d] font-bold">without developers</span>.</div></Header>
-          <p className="margin-bottom-24px-2 !text-[17px] md:!text-xl !max-w-[650px]">Harmony transforms your SaaS app into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
+          <Header className="text-center md:text-left" level={1}><div>Enable your <RotatingText className="text-[#0c4f6d] font-bold inline-block md:w-[403px]" texts={['designers', 'product managers', 'UX experts', 'decision makers']}/></div> <div>to ship UI <span className="text-[#0c4f6d] font-bold">without developers</span>.</div></Header>
+          <p className="margin-bottom-24px-2 !text-[17px] md:!text-xl !max-w-[650px] px-6 lg:px-0">Harmony transforms your SaaS app into an interactive design canvas. Changes shipped directly to your codebase. Made for designers.</p>
           <div className="w-layout-hflex flex-block mb-6">
             <div>
               <a href="https://j48inpgngmc.typeform.com/to/Ch60XpCt" className="button w-button">Join the Beta</a>
