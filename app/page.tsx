@@ -19,7 +19,7 @@ export default function Home() {
     <Banner className="sticky top-0 z-50">
       <div className="flex justify-evenly md:justify-center items-center lg:gap-10 gap-0 text-sm lg:text-lg">
         <div>We're raising <span>a seed round!</span></div>
-        <Button as="a" href="https://calendly.com/harmonyai/harmony-pitch" target="_blank">
+        <Button as="a" href="https://j48inpgngmc.typeform.com/to/XEHBk6xJ" target="_blank">
           <span className="hidden sm:block">Schedule a Pitch</span>
           <span className="block sm:hidden">Schedule a Pitch</span>
         </Button>
