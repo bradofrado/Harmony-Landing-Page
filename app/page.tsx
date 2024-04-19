@@ -18,7 +18,7 @@ export default function Home() {
     </div>
     <Banner className="sticky top-0 z-50">
       <div className="flex justify-evenly md:justify-center items-center lg:gap-10 gap-0 text-sm lg:text-lg">
-        <div>Talk to the founders!<span></span></div>
+        <div>Talk with us about our vision.<span></span></div>
         <Button as="a" href="https://j48inpgngmc.typeform.com/to/XEHBk6xJ" target="_blank">
           <span className="hidden sm:block">Schedule a Pitch</span>
           <span className="block sm:hidden">Schedule a Pitch</span>
