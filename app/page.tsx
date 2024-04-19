@@ -17,11 +17,11 @@ export default function Home() {
       </div>
     </div>
     <Banner className="sticky top-0 z-50">
-      <div className="flex justify-center items-center gap-10 text-lg">
-        <div>We're raising <span className="hidden md:inline">a seed round</span> in July!</div>
+      <div className="flex justify-evenly md:justify-center items-center lg:gap-10 gap-0 text-sm lg:text-lg">
+        <div>We're raising <span>a seed round!</span></div>
         <Button as="a" href="https://calendly.com/harmonyai/harmony-pitch" target="_blank">
           <span className="hidden sm:block">Schedule a Pitch</span>
-          <span className="block sm:hidden">Schedule</span>
+          <span className="block sm:hidden">Schedule a Pitch</span>
         </Button>
       </div>
     </Banner>
