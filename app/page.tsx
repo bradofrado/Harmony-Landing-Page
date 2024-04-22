@@ -86,7 +86,7 @@ export default function Home() {
         <div className="hero-wrapper-2">
           <div className="hero-split-2 items-start">
             <Header className="text-3xl pb-2.5" level={3}>Developer tools built for designers.</Header>
-            <p className="margin-bottom-24px-3">Build inside your application with a familiar design canvas. Create with your team’s design elements, components, and br/and. Absolutely no technical context required.</p>
+            <p className="margin-bottom-24px-3">Build inside your application with a familiar design canvas. Create with your team’s design elements, components, and brand. Absolutely no technical context required.</p>
           </div>
           <img src="/images/Harmony.ai - 2024-02-01T125708.592 1 (1).svg" loading="lazy" width="288" alt="" className="shadow-two-2"/>
         </div>
@@ -119,7 +119,7 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <div className="text-block">© 2024 Harmony UI LLC</div>
+          <div className="text-block">© 2024 Harmony UI, Inc</div>
         </div>
       </div>
     </section>
