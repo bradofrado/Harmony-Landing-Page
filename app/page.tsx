@@ -95,7 +95,7 @@ export default function Home() {
     <section className="hero-heading-left">
       <div className="container-3">
         <div className="header-wrapper mb-6">
-          <Header className="mr-0 pr-0" level={2}>How does <Emphasize>harmony</Emphasize> work?</Header>
+          <Header className="mr-0 pr-0" level={2}>Pure <Emphasize>Harmony</Emphasize> for developers.</Header>
         </div>
         <div className="mb-5">
             <Video src="https://www.loom.com/embed/3e6c689d979b4251903e7a5c67312bfc?sid=5489f8cb-87e9-46a3-9af6-9039df000d47"/>
