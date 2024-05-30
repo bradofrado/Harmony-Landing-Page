@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "harmony-ai-editor": "^0.11.5",
+    "harmony-ai-editor": "^0.12.7",
     "harmony-ai-plugin": "^0.1.18",
     "next": "14.2.1",
     "react": "^18",

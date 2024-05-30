@@ -46,8 +46,23 @@ export default function Home() {
     <section className="hero-heading-left">
       <div className="container-3">
         <div>
-          <img src="/harmony-preview.gif" />
+          <Video src="./harmony-preview-video.mp4" type='player'/>
         </div>
+      </div>
+    </section>
+    <section className="hero-heading-left">
+      <div className="container-3 m-10">
+          <div className="text-4xl tracking-tight text-slate-900">
+            "Having experienced the costly back and forth with the engineer trying to nail the design, I immediately saw Harmony's value to not only save time but money AND produce a better product that's driven by end user inputs. We jumped right in to try it out."
+          </div>
+          <div className="border-t mt-4 pt-4">
+            <div className="font-display text-base text-slate-900">
+              Keith
+            </div>
+            <div className="mt-1 text-sm text-slate-500">
+              CEO at Hintible
+            </div>
+          </div>
       </div>
     </section>
     <section className="hero-heading-left">
