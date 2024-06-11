@@ -51,8 +51,8 @@ export default function Home() {
       </div>
     </section>
     <section className="hero-heading-left">
-      <div className="container-3 m-10">
-          <div className="text-4xl tracking-tight text-slate-900">
+      <div className="container-3 m-10 hero-wrapper-2 flex-col !items-stretch">
+          <div className="text-lg md:text-4xl tracking-tight text-slate-900">
             "Having experienced the costly back and forth with the engineer trying to nail the design, I immediately saw Harmony's value to not only save time but money AND produce a better product that's driven by end user inputs. We jumped right in to try it out."
           </div>
           <div className="border-t mt-4 pt-4">
