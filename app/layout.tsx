@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Harmony UI",
-  description: "Integrated Design Canavas",
+  description: "Integrated Design Canvas",
 };
 
 export default function RootLayout({
